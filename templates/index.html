@@ -1,0 +1,59 @@
+<html>
+<body>
+<!-- <h3 style="...">API接口测试</h3> -->
+<img src="http://assets.qiniu.com/v2/qiniu-410x180.png?imageMogr2/gravity/Center/crop/365x93|imageMogr2/thumbnail/200x" />
+<h3 style="...">API接口测试</h3>
+
+<form action="/index/" method="post">
+<form>
+    <p>选择方法:
+    	<input type="radio" name="method" value="post" checked/>POST
+		<input type="radio" name="method" value="get" />GET
+    </p>
+    <p>是否直接请求:
+    	<input type="radio" name="fun" value="True" checked/>True
+		<input type="radio" name="fun" value="False" />False
+    </p>
+    <p>
+{#    	<input type="hidden" name="url" value="http://127.0.0.1:8000/add/" />#}
+		<input type="hidden" name="leixin" value="json" />
+    </p>
+    <p>api 地址:
+      <!-- <textarea name="apiurl" style="with:800px;height:30px;"/></textarea> -->
+      <textarea name="apiurl" rows="2" cols="40"></textarea>
+
+    </p>
+    <p>测试数据:
+      <!-- <textarea name="testbody" style="with:800px;height:30px;"/></textarea> -->
+      <textarea name="testbody" rows="3" cols="40"></textarea>
+    </p>
+    <p> A K 信息:
+      <!-- <textarea type="input" name="ak" style="with:800px;height:30px;"/></textarea> -->
+      <textarea type="input" name="ak" rows="2" cols="40"></textarea>
+    </p>
+    <p> S K 信息:
+      <!-- <textarea type="input" name="sk" style="with:800px;height:30px;"/></textarea> -->
+      <textarea type="input" name="sk" rows="2" cols="40"></textarea>
+    </p>
+    <p>提交：
+ 		<input type="submit" value="执行测试" />
+    </p>
+    
+    <p>请求 url：
+      <label>{{ apiurl }}</label><br/>
+     </p>
+     <p>请求body：
+      <label>{{ body }}</label><br/>
+     </p>
+     <p>curl 命令：
+      <label>{{ data }}</label><br/>
+     </p>
+     <p>response 信息：
+      <label >{{ response }}</label><br/>
+     </p>
+</form>
+
+</body>
+</html>
+
+
