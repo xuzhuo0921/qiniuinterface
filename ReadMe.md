@@ -68,7 +68,7 @@ def application(env, start_response):
 uwsgi –http :8001 –wsgi-file test.py  测试http://ip/  可以正常访问，说明uwsgi 安装成功
 ```
 进入项目目录 
-编辑 django_wsgi
+编辑 django_wsgi.py
 ```
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "qiniuinterface.settings")
