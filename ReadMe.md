@@ -120,6 +120,7 @@ systemctl start nginx
 http://ip:8001/index/  访问
 
 ### 5、关闭服务的方法
-将uWSGi进程杀死即可。
-sudo killall -9 uwsgi
-systemctl stop nginx 
+```
+sudo killall -9 uwsgi		 杀死 uwsgi 进程
+systemctl stop nginx 		 停止 nginx 服务
+```
