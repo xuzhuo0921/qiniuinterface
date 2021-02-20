@@ -19,7 +19,8 @@ python3 manage.py runserver 0.0.0.0:8000
 
 
 
-## django + uwsgi  + nginx 部署
+
+## django + uwsgi  + nginx 部署的方式
 
 ### 1.安装 python3 环境
 ```
